@@ -50,7 +50,7 @@ const Nav = ({containerStyles, linkStyles}) => {
            return (
             <Link 
                to={link.path}
-               className={`${linkStyles} text-[1.4rem] cursor-pointer border-b-2 hover:bg-blue-500/100 border-transparent uppercase font-bold`}
+               className={`${linkStyles} text-[1.4rem] cursor-pointer scale-y-150 tracking-tighter  border-b-2 hover:bg-blue-500/100 border-transparent uppercase font-bold`}
                key={index}
                smooth={!isDesktop ? false : true}
                spy
