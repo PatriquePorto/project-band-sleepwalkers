@@ -19,7 +19,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 const AlbumSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)
 
-  const { data, error } = useSWR('hhttps://json-sleepwalkers.vercel.app/albums', fetcher) //http://localhost:4000/albums https://json-sleepwalkers.vercel.app/albums
+  const { data, error } = useSWR('https://json-sleepwalkers.vercel.app/albums', fetcher) //http://localhost:4000/albums https://json-sleepwalkers.vercel.app/albums
  
   if (error) return 'Failed to fetch data'
   if (!data) return 'Loading...'
