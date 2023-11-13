@@ -9,7 +9,7 @@ const Biography = () => {
       
     <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
          
-      <div className='mb-30'>
+      <div className='mt-16'>
        
         <h1 className="uppercase text-[2.5rem]  font-bold ">Biografia</h1>
         <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />

@@ -10,23 +10,22 @@ import { fadeIn } from "../../variants"
 
 const Hero = () => {
   return (
-<section className="w-full h-full xl:h-[200vh]" id="home">
-  <div className="container mx-auto h-full flex items-center justify-center xl:justify-start">
+<section className="w-full h-full xl:h-[180vh]" id="home">
+  <div className="container  mx-auto h-full flex items-center justify-center xl:justify-start">
     {/* image */}
-    <div className="h-full flex flex-col mt-16 w-full items-center justify-center xl:items-start z-20">
+    <div className="w-full h-full flex flex-col mt-16  items-center justify-center xl:items-start z-20">
           <motion.div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-           className="md-w[500px]"
+           className="w-3/4 flex-col mx-auto items-center justify-center xl:justify-start"
           >
           <Image 
             className="w-full h-full object-cover"
             src="/images/band-intro.png"
             alt="hero"
-            width={1250}
-            height={300}
+           fill
           />
           <div className=" flex items-center justify-center " >
               <Image 
