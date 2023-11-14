@@ -19,7 +19,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-           className="w-3/4 flex-col mx-auto items-center justify-center xl:justify-start"
+           className="md:w-3/4 ms:w-full flex-col mx-auto items-center justify-center xl:justify-start"
           >
           <Image 
             className="w-full h-full object-cover"
