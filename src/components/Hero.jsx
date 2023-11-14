@@ -13,7 +13,7 @@ const Hero = () => {
 <section className="w-full h-full xl:h-[180vh]" id="home">
   <div className="container  mx-auto h-full flex items-center justify-center xl:justify-start">
     {/* image */}
-    <div className="w-full h-full flex flex-col mt-16  items-center justify-center xl:items-start z-20">
+    <div className="w-full h-full flex flex-col mt-16  items-center justify-center ms:mt-28 xs:mt-28 md:mt-36 xl:items-start z-20">
           <motion.div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
@@ -27,9 +27,9 @@ const Hero = () => {
             alt="hero"
            fill
           />
-          <div className=" flex items-center justify-center " >
+          <div className=" flex items-center justify-center" >
               <Image 
-                  className="flex w-full h-full object-cover -top-[10rem] z-10 logo"
+                  className="flex w-full h-full xs:mt-16 ms:mt-28 object-cover -top-[10rem] z-10 logo"
                   src="/images/logo2.png"
                   alt="hero"
                   width={600}
@@ -40,93 +40,73 @@ const Hero = () => {
           </motion.div>
      
           {/* card */}
-    <div className="w-full items-center justify-center">      
+    <div className="w-full items-center justify-center mx-auto ">      
         <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] font-bold pb-2">Notícias</h1>
         <hr className="w-[1263px] h-[3.5px] bg-white" />
        <div className="flex flex-row items-center gap-14 mt-8 ">
      
-                <motion.div 
-                    variants={fadeIn('right', 0.3)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{ once: false, amount: 0.3 }}
-                
-                  className="max-w-sm p-6 h-[550px] bg-black border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                        <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-200 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
-                      </a>
-                      <div className="w-500 h-350 ">
-                      <Image 
-                        className="w-[350px] h-[320px]"
-                        src="/images/event-image.webp"
-                        alt="hero"
-                        fill
-                      />
-                      </div>
-                    
-                      <p className="mb-3 font-normal text-gray-200 dark:text-gray-400">Band SleepWalkers tocando o melhor do Heavy Metal pra agitar a galera, compareça!</p>
-                      <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Leia mais
-                        <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                      </a>
-                </motion.div>
+       <div class="max-w-sm  bg-primary border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <Image 
+              className="rounded-t-lg w-[400px] h-[350px]  object-cotain"
+              src="/images/event-image.webp"
+              alt="event"
+              fill
+            />
+          <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Band SleepWalkers tocando o melhor do Gothic/Metal na integra, compareça!.</p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Leia Mais
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+     </div>
 
-                <motion.div 
-                      variants={fadeIn('up', 0.3)}
-                      initial="hidden"
-                      whileInView={'show'}
-                      viewport={{ once: false, amount: 0.3 }}
-                
-                  className="max-w-sm p-6 h-[550px] bg-black border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                        <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-200 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
-                      </a>
-                      <div className="w-500 h-350 ">
-                      <Image 
-                        className="w-[350px] h-[320px]"
-                        src="/images/event-image.webp"
-                        alt="hero"
-                        fill
-                      />
-                      </div>
-                    
-                      <p className="mb-3 font-normal text-gray-200 dark:text-gray-400">Band SleepWalkers tocando o melhor do Heavy Metal pra agitar a galera, compareça!</p>
-                      <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Leia mais
-                        <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                      </a>
-                </motion.div>
+<div class="max-w-sm bg-primary border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <Image 
+              className="rounded-t-lg w-[400px] h-[350px]  object-cotain"
+              src="/images/event-image.webp"
+              alt="event"
+              fill
+            />
+        <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Band SleepWalkers tocando o melhor do Gothic/Metal na integra, compareça!.</p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Leia Mais
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+</div>
 
-                <motion.div
-                    variants={fadeIn('left', 0.3)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className="max-w-sm p-6 h-[550px] bg-black border  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                      <a href="#">
-                        <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-200 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
-                      </a>
-                      <div className="w-500 h-350 ">
-                      <Image 
-                        className="w-[350px] h-[320px]"
-                        src="/images/event-image.webp"
-                        alt="hero"
-                        fill
-                      />
-                      </div>
-                    
-                      <p className="mb-3 font-normal text-gray-200 dark:text-gray-400">Band SleepWalkers tocando o melhor do Heavy Metal pra agitar a galera, compareça!</p>
-                      <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Leia mais
-                        <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                      </a>
-                </motion.div>
+<div class="max-w-sm bg-primary border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+           <Image 
+              className="rounded-t-lg w-[400px] h-[350px]  object-cotain"
+              src="/images/event-image.webp"
+              alt="event"
+              fill
+            />
+        <div class="p-5">
+              <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">Show com a banda SleepWalkers no Hangar 110</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Band SleepWalkers tocando o melhor do Gothic/Metal na integra, compareça!.</p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Leia Mais
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+              </a>
+          </div>
+</div>
            </div>
         </div>
 
