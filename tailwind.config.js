@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        singerOverlay: "url('/assets/hero/singer-overlay.png')",
+        singerOverlay: "url('/images/SleepWalkers.jpg')",
         newsletter : "url('/assets/newsletter/bg.png')",
       },
       fontFamily: {
