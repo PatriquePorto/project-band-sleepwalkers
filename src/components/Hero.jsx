@@ -43,7 +43,7 @@ const Hero = () => {
     <div className="w-full items-center justify-center mx-auto ">      
         <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] font-bold pb-2">Notícias</h1>
         <hr className="w-[1263px] h-[3.5px] bg-white" />
-       <div className="flex flex-row items-center gap-14 mt-8 ">
+       <div className="flex flex-row items-center gap-14 mt-8 ms:flex-col xs:flex-col md:flex-row ">
      
        <div class="max-w-sm  bg-primary border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <Image 
