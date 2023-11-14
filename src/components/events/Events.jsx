@@ -8,10 +8,10 @@ const getEvents = async () => {
 const Events = async () => {
   const events = await getEvents()
   return (
-     <section className="section bg-secondary/60" id="agenda" >
-       <div className="container mx-auto h-full flex items-center justify-center xl:justify-start">
+     <section className="section bg-secondary/60 " id="agenda" >
+       <div className="container w-full mx-auto h-full flex items-center justify-center xl:justify-start">
          
-         <div className='mb-20'>
+         <div className='w-full items-center justify-center mx-auto mb-20'>
           
           
            <h1 className="uppercase text-[2.5rem]  font-bold ">Agenda</h1>

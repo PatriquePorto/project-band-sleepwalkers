@@ -10,10 +10,10 @@ const VideoComponent = ({ videoId }) => {
 
   return (
     <section id='videos' className='w-full h-[60vh] flex items-center justify-center mt-10 bg-slate-700'>
-        <div className=''>
+        <div className='w-full items-center justify-center mx-auto'>
             <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
     
-                    <div className='mb-30'>  
+                    <div className='w-full items-center justify-center mx-auto mb-30'>  
                         <h1 className="uppercase text-[2.5rem]  font-bold ">Vídeos</h1>
                         <hr className="w-[1263px] h-[3.5px] bg-white mb-5"  />
                     </div>
@@ -24,7 +24,7 @@ const VideoComponent = ({ videoId }) => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
-                className='items-center justify-center flex row gap-8'>
+                className='items-center justify-center flex gap-8'>
                 <iframe
                     width="560"
                     height="315"
