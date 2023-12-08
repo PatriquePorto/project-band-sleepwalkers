@@ -10,7 +10,7 @@ import { fadeIn } from "../../variants"
 
 const Hero = () => {
   return (
-<section class="w-full h-full flex  bg-cover bg-center bg-no-repeat items-center justify-center sm:bg-cover sm:bg-center md:w-screen md:bg-cover md:bg-center md:bg-no-repeat lg:bg-cover lg:bg-center xl:bg-cover xl:bg-center" id="home">
+<section class="w-full h-full flex  items-center justify-center  sm:bg-center md:w-screen  md:bg-center  lg:bg-center xl:bg-cover xl:bg-center">
 
   <div className="container  mx-auto h-full flex items-center justify-center xl:justify-start">
     {/* image */}

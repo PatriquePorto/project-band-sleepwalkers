@@ -8,7 +8,7 @@ import { fadeIn } from "../../variants"
 const Intro = () => {
   return (
 
-<div className="bg-image w-screen h-screen overflow-hidden flex flex-col justify-center items-center">
+<div className="bg-image w-screen h-screen overflow-hidden flex flex-col justify-center items-center" id='home'>
       <Image className="inset-0  w-full h-full object-fill object-center md:w-full md:h-full 2xl:w-full 2xl:h-full lg:w-full lg:h-full sm:max-w-200 sm:max-h-100 " 
         src={IntroImg} 
         alt="Band image"
