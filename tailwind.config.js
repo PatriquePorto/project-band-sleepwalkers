@@ -9,6 +9,7 @@ module.exports = {
   mode: 'jit',
 
   theme: {
+ 
     containers: {
       padding: {
         DEFAULT: '35px',
@@ -26,6 +27,11 @@ module.exports = {
       backgroundImage: {
         singerOverlay: "url('/images/SleepWalkers.jpg')",
         newsletter : "url('/assets/newsletter/bg.png')",
+        'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '50%': '50%',
+      '16': '4rem',
       },
       fontFamily: {
         montserrat: [`var(--font-montserrat)`, 'sans-serif'],

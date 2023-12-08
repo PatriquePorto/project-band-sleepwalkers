@@ -10,39 +10,16 @@ import { fadeIn } from "../../variants"
 
 const Hero = () => {
   return (
-<section className="w-full h-full flex bg-[url('/images/bg.png')] bg-[length:200px_100px] xl:bg-cover lg:bg-center lg:bg-cover bg-center bg-no-repeat items-center justify-center xs:bg-cover xs:bg-center" id="home">
+<section class="w-full h-full flex  bg-cover bg-center bg-no-repeat items-center justify-center sm:bg-cover sm:bg-center md:w-screen md:bg-cover md:bg-center md:bg-no-repeat lg:bg-cover lg:bg-center xl:bg-cover xl:bg-center" id="home">
 
   <div className="container  mx-auto h-full flex items-center justify-center xl:justify-start">
     {/* image */}
     <div className="w-full h-full flex flex-col  items-center justify-center ms:mt-28 xs:mt-28 md:mt-36 xl:items-start z-20">
-          <motion.div
-            variants={fadeIn('down', 0.3)}
-            initial="hidden"
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
-           className="md:w-3/4 ms:w-full flex-col mx-auto items-center justify-center xl:justify-start"
-          >
-          <Image 
-            className="w-full h-full object-cover"
-            src="/images/band-intro.png"
-            alt="hero"
-           fill
-          />
-          <div className=" flex items-center justify-center" >
-              <Image 
-                  className="flex w-full h-full xs:mt-16 ms:mt-28 object-cover -top-[10rem] z-10 logo"
-                  src="/images/logo2.png"
-                  alt="hero"
-                  width={600}
-                  height={200}
-                />
-          </div>
-   
-          </motion.div>
+         
      
           {/* card */}
     <div className="w-full items-center justify-center mx-auto bottom-10 relative ">      
-        <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] font-bold pb-2">Notícias</h1>
+        <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem] font-bold pb-2">Notícias</h1>
         <hr className="w-[1263px] h-[3.5px] bg-white" />
        <div className="flex flex-row items-center gap-14 mt-8 ms:flex-col xs:flex-col md:flex-row ">
      
