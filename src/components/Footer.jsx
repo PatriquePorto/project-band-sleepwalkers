@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"	
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary section h-[500px] xl:h-auto">
+    <footer id="contact" className="bg-primary section h-[500px] xl:h-auto" >
       
        <div className="container mx-auto h-full flex flex-col items-center gap-y-8">
            {/* Email Link */}
@@ -30,10 +30,7 @@ const Footer = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
         >
-            <Nav 
-              containerStyles='flex flex-col xl:flex-row justify-center items-center gap-y-4 xl:gap-x-8 text-sm uppercase font-semibold'
-              linkStyles='hover:text-primary/80 transition-all'
-            />
+        
         </motion.div>
         {/* Socials */}
         <motion.div
@@ -56,16 +53,20 @@ const Footer = () => {
         >
            <Link
              href='#'
-             className="relative w-[280px] h-[100px] flex transition-all"
+             className="relative w-[200px] h-[80px] flex transition-all"
            >
                <Image 
                   src={'/images/logo2.png'}
                   fill
-                  className="object-contain"
+                  className="object-contain w-56 h-72"
                   alt="logo"
                 />
            </Link>
+         
         </motion.div>
+        <div>
+               <h4>© SLEEPWALKERS - Offcial Website - All Rights Reserved 2023</h4>
+           </div>
       </div>
     </footer>
   )
