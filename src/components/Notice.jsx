@@ -10,7 +10,7 @@ import { fadeIn } from "../../variants"
 
 const Hero = () => {
   return (
-<section class="w-full h-full flex  items-center justify-center  sm:bg-center md:w-screen  md:bg-center  lg:bg-center xl:bg-cover xl:bg-center">
+<section class="w-full h-full flex  items-center justify-center  sm:bg-center md:w-screen  md:bg-center ms:-mt-12  lg:bg-center xl:bg-cover xl:bg-center">
 
   <div className="container  mx-auto h-full flex items-center justify-center xl:justify-start">
     {/* image */}
@@ -18,9 +18,12 @@ const Hero = () => {
          
      
           {/* card */}
-    <div className="w-full items-center justify-center mx-auto bottom-10 relative ">      
-        <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem] font-bold pb-2">Notícias</h1>
-        <hr className="w-[1263px] h-[3.5px] bg-white" />
+    <div className="w-full items-center justify-center mx-auto bottom-10 relative ">
+       <div className="xl:-ml-0 ms:-ml-12">
+          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Notícias</h1>
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+        </div>      
+       
        <div className="flex flex-row items-center gap-14 mt-8 ms:flex-col xs:flex-col md:flex-row ">
      
        <motion.div 

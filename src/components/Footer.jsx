@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-primary section h-[500px] xl:h-auto" >
       
-       <div className="container mx-auto h-full flex flex-col items-center gap-y-8">
+       <div className="container xl:mt-0 ms:mt-10 mx-auto h-full flex flex-col items-center gap-y-8">
            {/* Email Link */}
           <motion.div
              variants={fadeIn('up', 0.2)}
@@ -20,7 +20,7 @@ const Footer = () => {
              viewport={{ once: false, amount: 0.3 }}
            >
               <Link href='#'>
-                  <h2 className="text-[24px] lg:text-[38px] font-semibold leading-tight">sleepwalkers_brazil@gmail.com</h2>
+                  <h2 className="text-[24px] lg:text-[38px] ms:text-[1rem] font-semibold leading-tight">sleepwalkers_brazil@gmail.com</h2>
               </Link>
           </motion.div>
        {/* Nav */}
@@ -69,8 +69,9 @@ const Footer = () => {
              initial="hidden"
              whileInView={'show'}
              viewport={{ once: false, amount: 0.3 }}
+             className="w-[400px] flex justify-center"
          >
-               <h4 className="font-bold text-xs">
+               <h4 className="font-bold text-xs xl:text-xs ms:text-[0.7rem]">
                 © SLEEPWALKERS - Offcial Website - All Rights Reserved 2023</h4>
            </motion.div>
       </div>
