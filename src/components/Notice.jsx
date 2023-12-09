@@ -19,9 +19,9 @@ const Hero = () => {
      
           {/* card */}
     <div className="w-full items-center justify-center mx-auto bottom-10 relative ">
-       <div className="xl:-ml-0 ms:-ml-12">
+       <div className="xl:-ml-0 ms:-ml-12 sm:ml-8">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Notícias</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[710px] bg-white" />
         </div>      
        
        <div className="flex flex-row items-center gap-14 mt-8 ms:flex-col xs:flex-col md:flex-row ">

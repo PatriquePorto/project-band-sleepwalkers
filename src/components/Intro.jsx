@@ -18,7 +18,7 @@ const Intro = () => {
         sizes="(max-width: 768px) 100vw, (max-width: 480px) 50vw, 100hv"
         />
 
-  <div className="xl:w-[60%] h-[700px] sm:w-[80%] sm-h-[200px] xs:w-[80%] ms:w-[70%] ms:h-[300px] md:w-[70%] md:h-[600px] md:flex md:items-center md:justify-center lg:w-[65%] lg:h-[650px] absolute flex items-center justify-center">
+  <div className="xl:w-[60%] h-[700px] sm:w-[80%] sm-h-[200px] xs:w-[80%] ms:w-[80%] ms:h-[5%] md:w-[70%] md:h-[600px] md:flex md:items-center md:justify-center lg:w-[65%] lg:h-[650px] absolute flex items-center justify-center">
     {/* Parent container */}
        
     <motion.div
@@ -26,15 +26,15 @@ const Intro = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-           className="w-[450px] h-[500px] ms:w-full flex-col mx-auto items-center justify-center xl:justify-start"
+           className="xl:w-[450px] xl:h-[500px] object-fill flex-col mx-auto items-center justify-center xl:justify-start"
           >
           <Image 
-            className="object-fit]"
+            className="object-fit xl:w-full xl:h-full ms:object-fit ms:w-full ms:h-full"
             src="/images/band-intro.png"
             alt="hero"
           fill
           />
-          <div className="mt-[400px] flex items-center justify-center xl:mt-[20rem] xl:w-full xl:ml-0 ms:mt-56 ms:w-[200px] ms:ml-9" >
+          <div className="mt-[400px] flex items-center justify-center xl:mt-[20rem] xl:w-full xl:ml-0 ms:mt-56 ms:w-[200px] ms:ml-9 sm:w-[400px] sm:ml-[2%] sm:mt-[99%]" >
               <Image 
                   className="flex xs:mt-16 ms:mt-28 object-cover z-10"
                   src="/images/logo2.png"

@@ -57,7 +57,7 @@ const Header = () => {
            {/* Social */}
            <div>
               <Socials
-                  containerStyles='flex text-[24px] gap-x-2'
+                  containerStyles='flex text-[24px] xl:gap-x-3 ms:gap-x-4'
                   iconStyles='hover:scale-125 transition-all'
               />
            </div>

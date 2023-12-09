@@ -41,11 +41,11 @@ const ImageGallery = () => {
     <section id="photos" className="xl:mt-10 ms:mt-10">
     <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
    
-    <div className="xl:-ml-0 ms:-ml-0">
-          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Fotos</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
-        </div>     
- 
+    <div className="xl:-ml-0 ms:-ml-12 sm:ml-8">
+                  <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Fotos</h1>
+                  <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[710px] bg-white" />
+              </div>    
+    
     </div>
         
 
@@ -75,10 +75,10 @@ const ImageGallery = () => {
         </motion.div>
 
   {selectedImage && (
-        <div className=" fixed w-full h-full mt-12 flex items-center justify-center lg:w-2/4 lg:h-5/6 inset-0 sm:w-2/4 sm:h-5/6 sm:inset-1/4 sm:top-12  z-50">
+        <div className=" fixed w-full h-full mt-12 flex items-center justify-center lg:w-2/4 lg:h-5/6 inset-0 sm:w-[650px] sm:-ml-[16.5%] sm:h-5/6 sm:inset-1/4 sm:top-12  z-50">
           
           <Image
-              className='w-full h-full xl:w-full xl:h-full '
+              className='w-full h-full xl:w-full xl:h-full ms:w-[100%] md:w-[100%] '
               src={selectedImage}
               layout='fill'
               quality={100}

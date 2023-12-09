@@ -68,8 +68,8 @@ const AlbumSlider = () => {
                           key={index}>
                           {/* Track Name */}
                            <div className="flex flex-1 items-center gap-x-2 capitalize font-semibold xl:font-extrabold"> 
-                              <div className="text-accent text-sm xl:text-lg ms:text-[.6rem]">0{index + 1}.</div>
-                              <div className="text-sm  xl:text-base ms:text-[.6rem]">{track.name}</div>
+                              <div className="text-accent text-sm xl:text-lg ms:text-[.6rem] sm:text-[.8rem]">0{index + 1}.</div>
+                              <div className="text-sm  xl:text-base ms:text-[.6rem] sm:text-[.8rem]">{track.name}</div>
                             </div>
                            {/* Player */}
                           <div>
