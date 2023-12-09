@@ -11,9 +11,9 @@ const Biography = () => {
          
       <div className='w-full items-center justify-center mx-auto '>
        
-      <div className="xl:-ml-0 ms:-ml-16 sm:ml-8">
+      <div className="xl:-ml-0 ms:-ml-16 sm:ml-8 md:-ml-0">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Biografia</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24rem] bg-white" />
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24rem] md:w-[45rem] bg-white" />
         </div>     
 
          <motion.div

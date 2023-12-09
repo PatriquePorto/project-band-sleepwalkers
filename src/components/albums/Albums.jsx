@@ -15,7 +15,7 @@ const Albums = () => {
 
           <div className="xl:-ml-0 ms:-ml-16 sm:ml-8">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Discografia</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24.5rem] bg-white" />
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24.5rem] md:w-[45rem] bg-white" />
         </div>   
 
           </div>

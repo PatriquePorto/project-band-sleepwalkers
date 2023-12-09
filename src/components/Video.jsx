@@ -13,12 +13,12 @@ const VideoComponent = ({ videoId }) => {
         <div className='w-full items-center justify-center mx-auto'>
             <div className="container  mx-auto h-full  flex items-center justify-center xl:justify-start">
     
-             <div className='w-full items-center justify-center mx-auto  xs:-mt-16 '>  
+             <div className='w-full items-center justify-center mx-auto  xs:-mt-16  '>  
 
-             <div className="xl:-ml-0 ms:-ml-16 sm:ml-8">
-          <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Vídeos</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24rem] bg-white" />
-        </div>   
+                        <div className="xl:-ml-0 ms:-ml-16 sm:ml-8 md:ml-6">
+                    <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Vídeos</h1>
+                        <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24rem] md:w-[45rem] bg-white" />
+                    </div>   
             </div>
 
             </div>
@@ -27,7 +27,7 @@ const VideoComponent = ({ videoId }) => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
-                className='items-center justify-center flex gap-8 xs:flex-col ms:flex-col ms:w-[97%] ms:h-[750px] ms:mt-10 ms:ml-[1.5%]  md:flex-col md:w-full md:h-full md:ml-0 xl:w-[1270px] xl:mt-16 xl:ml-[15.5%] xs:w-[50px] xs:h-[30%] xs:ml-[50%]'>
+                className='items-center justify-center flex gap-8 xl:flex-row xs:flex-col ms:flex-col ms:w-[97%] ms:h-[750px] ms:mt-10 ms:ml-[1.5%]  md:flex-col md:w-full md:h-full md:ml-0 xl:w-[1270px] xl:mt-16 xl:ml-[15.5%] xs:w-[50px] xs:h-[30%] xs:ml-[50%]'>
                 <iframe
                     width="100%"
                     height="315"

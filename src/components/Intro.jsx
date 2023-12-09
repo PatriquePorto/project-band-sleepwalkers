@@ -34,7 +34,7 @@ const Intro = () => {
             alt="hero"
           fill
           />
-          <div className="mt-[400px] flex items-center justify-center xl:mt-[20rem] xl:w-full xl:ml-0 ms:mt-60 ms:w-[250px] ms:ml-3 sm:w-[400px] sm:ml-[2%] sm:mt-[99%]" >
+          <div className="mt-[400px] flex items-center justify-center xl:mt-[23rem] xl:w-full xl:ml-0 ms:mt-60 ms:w-[250px] ms:ml-3 sm:w-[400px] sm:ml-[2%] sm:mt-[99%]" >
               <Image 
                   className="flex xs:mt-16 ms:mt-28 object-cover z-10"
                   src="/images/logo2.png"
