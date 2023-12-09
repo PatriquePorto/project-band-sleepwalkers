@@ -9,7 +9,7 @@ const VideoComponent = ({ videoId }) => {
   const videoUrl2 = `https://www.youtube.com/embed/XgpdQkNUOyc?si=4-zotY20SHdYQ032`;
 
   return (
-    <section id='videos' className='w-full h-[60vh] xs:h-[800px] md:h-[90vh] ms:h-[850px] top-0 flex items-center justify-center mt-10 bg-slate-700'>
+    <section id='videos' className='w-full h-[60vh] xl:w-full xl:h-[60vh] xs:h-[800px] md:h-[90vh] ms:h-[850px] top-0 flex items-center justify-center mt-10 bg-slate-700'>
         <div className='w-full items-center justify-center mx-auto'>
             <div className="container  mx-auto h-full  flex items-center justify-center xl:justify-start">
     

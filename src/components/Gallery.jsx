@@ -38,12 +38,12 @@ const ImageGallery = () => {
 
   return (
     
-    <section id="photos" className="xl:mt-10 ms:mt-10">
+    <section id="photos" className="xl:w-full xl:h-full xl:mt-10 ms:mt-10">
     <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
    
     <div className="xl:-ml-0 ms:-ml-0 sm:ml-8 md:ml-0">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Fotos</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24.5rem] md:w-[45rem] bg-white" />
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24.5rem] xs:w[24.5rem] md:w-[45rem] bg-white" />
         </div>   
     
     </div>
