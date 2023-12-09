@@ -1,9 +1,10 @@
+'use client'
+
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import IntroImg from '../../public/images/bg.png'
 import { motion } from "framer-motion"
-import { fadeIn } from "../../variants"
+import { fadeIn } from "../../variants"	
 
 const Intro = () => {
   return (
@@ -20,7 +21,7 @@ const Intro = () => {
   <div className="xl:w-[60%] h-[700px] sm:w-[80%] sm-h-[200px] xs:w-[80%] ms:w-[80%] ms:h-[500px] md:w-[70%] md:h-[600px] md:flex md:items-center md:justify-center lg:w-[65%] lg:h-[650px] absolute flex items-center justify-center">
     {/* Parent container */}
        
-    <div
+    <motion.div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
@@ -43,14 +44,12 @@ const Intro = () => {
                 />
           </div>
    
-      </div>
+      </motion.div>
        
   </div>
 
 </div>
-
-
-   
+ 
   )
 }
 

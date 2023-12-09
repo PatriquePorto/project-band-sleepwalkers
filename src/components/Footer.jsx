@@ -64,9 +64,15 @@ const Footer = () => {
            </Link>
          
         </motion.div>
-        <div>
-               <h4>© SLEEPWALKERS - Offcial Website - All Rights Reserved 2023</h4>
-           </div>
+        <motion.div
+             variants={fadeIn('up', 0.8)}
+             initial="hidden"
+             whileInView={'show'}
+             viewport={{ once: false, amount: 0.3 }}
+         >
+               <h4 className="font-bold text-xs">
+                © SLEEPWALKERS - Offcial Website - All Rights Reserved 2023</h4>
+           </motion.div>
       </div>
     </footer>
   )
