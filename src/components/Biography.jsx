@@ -11,10 +11,10 @@ const Biography = () => {
          
       <div className='w-full items-center justify-center mx-auto '>
        
-      <div className="xl:-ml-0 ms:-ml-12 sm:ml-0">
+      <div className="xl:-ml-0 ms:-ml-16 sm:ml-8">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Biografia</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[710px] bg-white" />
-        </div>    
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24rem] bg-white" />
+        </div>     
 
          <motion.div
             variants={fadeIn('left', 0.3)}
