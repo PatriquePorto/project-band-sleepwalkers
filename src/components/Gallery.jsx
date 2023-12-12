@@ -38,14 +38,14 @@ const ImageGallery = () => {
 
   return (
     
-    <section id="photos" className="xl:w-full xl:h-full xl:mt-10 ms:mt-10">
+    <section id="photos" className="xl:mt-10 ms:mt-10">
     <div className="container mx-auto h-full  flex items-center justify-center xl:justify-start">
    
-    <div className="xl:-ml-0 ms:-ml-0 sm:ml-8 md:ml-0">
+    <div className="xl:-ml-0 ms:-ml-0">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Fotos</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[24.5rem] xs:w[24.5rem] md:w-[45rem] bg-white" />
-        </div>   
-    
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+        </div>     
+ 
     </div>
         
 
@@ -58,7 +58,7 @@ const ImageGallery = () => {
           viewport={{ once: false, amount: 0.3 }}
            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ms:grid-cols-2 gap-4">
             {galleryItems.map((item) => (
-              <div className="gallery-item rounded-3xl object-fill transition ease-in-out delay-150 hover:scale-125 " key={item.index}>
+              <div className="gallery-item rounded-3xl object-fill transition ease-in-out delay-150 hover:scale-110 " key={item.index}>
                 <div onClick={() => handleImageClick(item.image.src)}>
                   <Image
                     src={item.image}
@@ -75,10 +75,10 @@ const ImageGallery = () => {
         </motion.div>
 
   {selectedImage && (
-        <div className=" fixed w-full h-full mt-12 flex items-center justify-center lg:w-2/4 lg:h-5/6 inset-0 sm:w-[650px] sm:-ml-[16.5%] sm:h-5/6 sm:inset-1/4 sm:top-12  z-50">
+        <div className=" fixed w-full h-full mt-12 flex items-center justify-center lg:w-2/4 lg:h-5/6 inset-0 sm:w-2/4 sm:h-5/6 sm:inset-1/4 sm:top-12  z-50">
           
           <Image
-              className='w-full h-full xl:w-full xl:h-full ms:w-[100%] md:w-[100%] '
+              className='w-full h-full xl:w-full xl:h-full '
               src={selectedImage}
               layout='fill'
               quality={100}
