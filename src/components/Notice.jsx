@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 
 
-const Hero = () => {
+const Notice = () => {
   return (
 <section class="w-full h-full flex  items-center justify-center  sm:bg-center md:w-screen  md:bg-center ms:-mt-12  lg:bg-center xl:bg-cover xl:bg-center">
 
@@ -19,12 +19,12 @@ const Hero = () => {
      
           {/* card */}
     <div className="w-full items-center justify-center mx-auto bottom-10 relative ">
-       <div className="xl:-ml-0 ms:-ml-12">
+       <div className="xl:-ml-0 ms:-ml-12 sm:-ml-0 md:ml-4">
           <h1 className="uppercase xl:text-[2.5rem] md:text-[2rem] sm:text-[2rem]  font-bold pb-2">Notícias</h1>
-            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] bg-white" />
+            <hr className="w-[1263px] h-[3.5px] xl:w-[1263px] ms:w-[350px] md:w-[98%] bg-white" />
         </div>      
        
-       <div className="flex flex-row items-center gap-14 mt-8 ms:flex-col xs:flex-col md:flex-row ">
+       <div className="flex flex-row items-center xl:gap-14 md:gap-4 ms:gap-4 mt-8 ms:flex-col ms:w-[30rem] ms:-ml-28 md:w-[100%] md:-ml-0  xs:flex-col md:flex-row ">
      
        <motion.div 
           variants={fadeIn('right', 0.3)}
@@ -111,4 +111,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Notice

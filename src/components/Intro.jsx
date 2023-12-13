@@ -25,11 +25,11 @@ const Intro = () => {
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.7 }}
            className="w-[450px] h-[500px] ms:w-full flex-col mx-auto items-center justify-center xl:justify-start"
           >
           <Image 
-            className="object-fit]"
+            className="object-fit"
             src="/images/band-intro.png"
             alt="hero"
           fill

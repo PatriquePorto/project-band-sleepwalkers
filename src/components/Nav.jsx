@@ -59,7 +59,7 @@ const Nav = ({containerStyles, linkStyles}) => {
           return (
             <NextLink href={link.path} 
             target="_blank" rel="noopener noreferrer"
-            className={`${linkStyles} text-[1.4rem] px-1 cursor-pointer scale-y-150 tracking-tighte bg-red-500 rounded-lg  hover:bg-blue-500/100 border-transparent uppercase font-bold`} key={index}   >
+            className={`${linkStyles} text-[1.25rem] px-1 cursor-pointer scale-y-150 tracking-tighte bg-red-500 rounded-lg  hover:bg-blue-500/100 border-transparent uppercase font-bold`} key={index}   >
               {link.name}
             </NextLink>
           );
@@ -67,7 +67,7 @@ const Nav = ({containerStyles, linkStyles}) => {
       return (
         <Link
           to={link.path}
-          className={`${linkStyles} text-[1.4rem] cursor-pointer scale-y-150 tracking-tighter  border-b-2 rounded hover:bg-blue-500/100 border-transparent uppercase font-bold`}
+          className={`${linkStyles} text-[1.25rem] cursor-pointer scale-y-150 tracking-tighter  border-b-2 rounded hover:bg-blue-500/100 border-transparent uppercase font-bold`}
           key={index}
           smooth={!isDesktop ? false : true}
           spy
