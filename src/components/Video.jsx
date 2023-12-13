@@ -26,7 +26,7 @@ const VideoComponent = ({ videoId }) => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
-                className='items-center justify-center flex gap-8 xs:flex-col ms:flex-col ms:w-[380px] ms:h-[30%] ms:ml-[1%]  md:flex-row md:w-full md:h-full md:ml-0 xl:w-[1270px] xl:mt-16 xl:ml-[15.5%] xs:w-[50px] xs:h-[30%] xs:ml-[50%]'>
+                className='items-center justify-center flex gap-8 xs:flex-col ms:flex-col ms:w-[380px] ms:h-[30%] ms:ml-[1.3%]  md:flex-row md:w-full md:h-full md:ml-0 xl:w-[1270px] xl:mt-16 xl:ml-[15.5%] xs:w-[50px] xs:h-[30%] xs:ml-[50%]'>
                 <iframe
                     width="100%"
                     height="315"
