@@ -4,21 +4,17 @@ import Navbar from './components/Navbar'
 import Main from './components/Main'
 
 export const metadata = {
-  title: 'Official SleepWalkers Shop',
+  title: 'SleepWalkers || Store',
   description: 'SleepWalkers is a music band based in São Paulo Brazil.',
 }
 
-const Page = () => {
+const  Page = () => {
   return (
     <React.Fragment>  
       <div>
       <Navbar />
       <Main />
-      </div>
-       
-      
-      
-      
+      </div>   
     </React.Fragment>
   )
 }
