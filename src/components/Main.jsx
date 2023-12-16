@@ -35,7 +35,7 @@ const Main = () => {
           fill
           /> */}
       
-          <div className=" flex items-center justify-center  xl:mt-[27%] xl:h-[250px] xl:w-[100%] xl:ml-0 md:w-[70%] md:mt-[80%] ms:mt-56 ms:w-[200px] ms:ml-9" >
+          <div className=" flex items-center justify-center  xl:mt-[23%] xl:h-[250px] xl:w-[100%] xl:ml-0 md:w-[70%] md:mt-[80%] ms:mt-56 ms:w-[200px] ms:ml-9" >
               <Image 
                   className="flex xs:mt-16 ms:mt-28 object-cover z-10"
                   src="/images/logo2.png"
